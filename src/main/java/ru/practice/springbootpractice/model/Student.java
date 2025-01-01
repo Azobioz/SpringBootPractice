@@ -1,17 +1,17 @@
 package ru.practice.springbootpractice.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+@Data
+@Builder
 public class Student {
 
     private String firstName;
     private String lastName;
     private LocalDate birthDate;
+    @NonNull
     private String email;
     private int age;
 
